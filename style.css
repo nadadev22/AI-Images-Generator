@@ -77,8 +77,8 @@ overflow: hidden;
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #0f0b30; /* لون خلفية يناسب تصميم الموقع */
-    color: #fff; /* لون النص */
+    background-color: #0f0b30; 
+    color: #fff; 
     margin-top: 20px;
     border-top: 2px solid #293274;
 }
