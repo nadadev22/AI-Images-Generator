@@ -7,20 +7,20 @@ document.getElementById('generateBtn').addEventListener('click', async () => {
     }
 
     try {
-        const apiKey = '-0WMxDEn22bEs3ELvELxDInC-rA_WrgTudaE-VcRUHU'; // استبدليها بمفتاح API الخاص بك
-        const apiUrl = `https://api.unsplash.com/photos/random?query=${description}&client_id=${apiKey}&count=3`; // جلب 3 صور فقط
+        const apiKey = '-0WMxDEn22bEs3ELvELxDInC-rA_WrgTudaE-VcRUHU'; 
+        const apiUrl = `https://api.unsplash.com/photos/random?query=${description}&client_id=${apiKey}&count=3`;
         const response = await fetch(apiUrl);
         const data = await response.json();
 
         const imagesContainer = document.querySelector('.images');
-        imagesContainer.innerHTML = ''; // مسح الصور القديمة
+        imagesContainer.innerHTML = ''; 
 
         data.forEach(photo => {
             const imgDiv = document.createElement('div');
             const imgElement = document.createElement('img');
-            imgElement.src = photo.urls.regular; // استخدمي الرابط المناسب للصورة
+            imgElement.src = photo.urls.regular; 
             imgDiv.appendChild(imgElement);
-            imagesContainer.appendChild(imgDiv); // إضافة الصورة إلى الحاوية
+            imagesContainer.appendChild(imgDiv); 
         });
 
     } catch (error) {
