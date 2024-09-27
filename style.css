@@ -1,0 +1,129 @@
+body {
+    
+    background-color: #0f0b30;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+     height: 100vh;
+}
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+
+
+
+}
+h2 {
+   font-size: 40px;
+    color: #fff;
+}
+
+.container{
+background-color: #16103d;
+padding: 5px;
+width: 620px ;
+border: 1px solid #0f0b30;
+border-radius: 10px;
+
+}
+
+input, button {
+    padding: 8px;
+    border: none;
+    font-size: 20px;
+}
+
+input {
+    background-color:#1a1441;
+    width: 75%;
+    outline: none;
+    color: #fff;
+}
+button{
+    background-color:rgb(5, 4, 39); 
+    width: 20%;
+    cursor:pointer;
+    color: #fff;
+
+}
+button:hover{
+    background-color: #293274;
+}
+
+
+.images{
+display: grid;
+grid-template-columns:repeat(3,1fr) ;
+gap: 10px;
+}
+.images div{
+height: 200px;
+width: 200px;
+background-color:#22175f ;
+border-radius: 10px;
+border: 3px solid #363e79;
+overflow: hidden;
+
+}
+.images div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f0b30; /* لون خلفية يناسب تصميم الموقع */
+    color: #fff; /* لون النص */
+    margin-top: 20px;
+    border-top: 2px solid #293274;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+.signature {
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px;
+    position: relative; 
+}
+
+.signature h2 {
+    font-size: 48px; 
+    font-family: 'Dancing Script', cursive; 
+    background: linear-gradient(45deg, #ff6b6b, #f7b733, #f5f47d, #6dd5ed); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: shine 2s infinite; 
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
